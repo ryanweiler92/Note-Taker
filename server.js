@@ -4,6 +4,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const fs = require('fs');
 const path = require('path');
 
+//probably remove
 const { notes } = require('./data/db')
 
 const express = require('express');
