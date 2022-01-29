@@ -1,20 +1,29 @@
 {
-    "notes": [
+  "notes": [
     {
-        "id": "0",
-        "title":"Test Title",
-        "text":"Test text"
+      "id": "0",
+      "title": "Test Title",
+      "text": "Test text"
     },
     {
-        "id": "1",
-        "title": "does this work",
-        "text": "idk"
+      "id": "1",
+      "title": "does this work",
+      "text": "idk"
     },
     {
-        "id": "2",
-        "title": "silent",
-        "text": "planet"
+      "id": "2",
+      "title": "silent",
+      "text": "planet"
+    },
+    {
+      "title": "bad",
+      "text": "omens",
+      "id": "3"
+    },
+    {
+      "title": "Rule",
+      "text": "of Nines",
+      "id": "4"
     }
-]
+  ]
 }
-
