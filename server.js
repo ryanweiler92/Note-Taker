@@ -1,8 +1,10 @@
 const { notes } = require('./data/db')
 
 const express = require('express');
+const PORT = process.env.PORT || 3001;
 //instantiate the server
 const app = express();
+
 
 function filterByQuery(query, notesArray) {
     let filteredResults = notesArray;
@@ -24,6 +26,6 @@ app.get('/api/db', (req, res) => {
     res.json(results)
 })
 
-app.listen(3001, () => {
-    console.log(`API server now on port 3001`);
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
 });
