@@ -2,8 +2,10 @@ const { notes } = require('./data/db')
 
 const express = require('express');
 const PORT = process.env.PORT || 3001;
-//instantiate the server
 const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 function filterByQuery(query, notesArray) {
@@ -21,6 +23,13 @@ function filterByQuery(query, notesArray) {
 function findById(id, notesArray) {
     const result = notesArray.filter(note => note.id === id)[0];
     return result
+};
+
+function createNewNote(body, notesArray) {
+    console.log(body)
+
+
+    return body;
 }
 
 app.get('/api/db', (req, res) => {
@@ -38,7 +47,13 @@ app.get('/api/db/:id', (req, res) => {
     } else {
         res.send(404)
     }
-})
+});
+
+app.post('/api/db', (req, res) => {
+    req.body.id = notes.length.toString();
+    
+    res.json(req.body)
+});
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
