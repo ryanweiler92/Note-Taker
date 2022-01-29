@@ -1,6 +1,17 @@
-[
+{
+    "notes": [
     {
         "title":"Test Title",
         "text":"Test text"
+    },
+    {
+        "title": "does this work",
+        "text": "idk"
+    },
+    {
+        "title": "silent",
+        "text": "planet"
     }
 ]
+}
+
