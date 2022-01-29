@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { filterByQuery, findById, createNewNote, validateNote} = require('../../lib/notes')
 const { notes } = require('../../data/db')
 
-router.get('/api/db', (req, res) => {
+router.get('/db', (req, res) => {
     let results = notes;
     if (req.query) {
         results = filterByQuery(req.query, results)
@@ -10,7 +10,7 @@ router.get('/api/db', (req, res) => {
     res.json(results)
 });
 
-router.get('/api/db/:id', (req, res) => {
+router.get('/db/:id', (req, res) => {
     const result = findById(req.params.id, notes);
     if (result) {
     res.json(result)
@@ -19,7 +19,7 @@ router.get('/api/db/:id', (req, res) => {
     }
 });
 
-router.post('/api/db', (req, res) => {
+router.post('/db', (req, res) => {
     req.body.id = notes.length.toString();
 
     if (!validateNote(req.body)) {
