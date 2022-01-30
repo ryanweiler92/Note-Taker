@@ -2,33 +2,8 @@
   "notes": [
     {
       "id": "0",
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "id": "1",
-      "title": "does this work",
-      "text": "idk"
-    },
-    {
-      "id": "2",
-      "title": "silent",
-      "text": "planet"
-    },
-    {
-      "title": "bad",
-      "text": "omens",
-      "id": "3"
-    },
-    {
-      "title": "Rule",
-      "text": "of Nines",
-      "id": "4"
-    },
-    {
-      "title": "Testing 123",
-      "text": "Uhhhhhhh\n",
-      "id": "5"
+      "title": "How to use Note Taker!",
+      "text": "Click the plus icon in the top right corner. Enter a title and description and then click the save icon in the top right. Feel free to delete this note! "
     }
   ]
 }

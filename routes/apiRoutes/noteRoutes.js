@@ -30,4 +30,16 @@ router.post('/db', (req, res) => {
     }
 });
 
+router.delete('/db/:id', (req, res) => {
+    const result = findById(req.params.id, notes)
+
+    if (result) {
+        notes.splice(result, 1)
+        res.json(notes)
+    } else {
+        return res.status(404).json({})
+    }
+
+})
+
 module.exports = router;
