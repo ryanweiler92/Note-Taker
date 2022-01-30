@@ -49,7 +49,6 @@ const saveNote = (note) =>
   })
   .then(postResponse => {
     console.log(postResponse);
-    alert('Added note')
   })
 
 const deleteNote = (id) =>
